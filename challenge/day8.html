@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>repl.it</title>
+    <link href="style.css" rel="stylesheet" />
+    <style>
+      body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      #box {
+        width: 500px;
+        height: 850px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+      }
+      .color {
+        width: 200px;
+        height: 400px;
+      }
+      .explain {
+        width: 200px;
+        height: 130px;
+        background-color: white;
+        position: relative;
+        top: 30px;
+        padding-left: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+      }
+      .color:nth-child(1) {
+        background-color: #ff6347;
+      }
+      .color:nth-child(2) {
+        background-color: #008080;
+      }
+      .color:nth-child(3) {
+        background-color: #deb887;
+      }
+      .color:nth-child(4) {
+        background-color: #d7bfd7;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>The Bset Colors</h1>
+    <div id="box">
+      <div class="color">
+        <div class="explain">
+          <h2>Tomato</h2>
+          <h4>#FF6347</h4>
+        </div>
+      </div>
+      <div class="color">
+        <div class="explain">
+          <h2>Teal</h2>
+          <h4>#008080</h4>
+        </div>
+      </div>
+      <div class="color">
+        <div class="explain">
+          <h2>Burlywood</h2>
+          <h4>#DEB887</h4>
+        </div>
+      </div>
+      <div class="color">
+        <div class="explain">
+          <h2>Thistle</h2>
+          <h4>#D7BFD7</h4>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

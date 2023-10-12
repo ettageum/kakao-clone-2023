@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>repl.it</title>
+    <link href="style.css" rel="stylesheet" />
+    <style>
+      html {
+        background-color: #6bbcbe;
+      }
+      body {
+        width: 100vh;
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+      }
+      #circle {
+        width: 70px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        animation: roundCircle 2s linear infinite;
+      }
+      .dot {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background-color: white;
+      }
+      @keyframes roundCircle {
+        0 {
+          transform: rotatez(0);
+        }
+        40% {
+          transform: rotatez(180deg);
+        }
+        50% {
+          transform: rotatez(180deg);
+        }
+        90% {
+          transform: rotatez(360deg);
+        }
+        100% {
+          transform: rotatez(360deg);
+        }
+      }
+      #strech {
+        width: 70px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+      }
+      .line {
+        width: 10px;
+        height: 40px;
+        background-color: white;
+        animation: strechLine 1s linear infinite;
+      }
+      .line:nth-child(2) {
+        animation-delay: 0.1s;
+      }
+      .line:nth-child(3) {
+        animation-delay: 0.2s;
+      }
+      .line:nth-child(4) {
+        animation-delay: 0.3s;
+      }
+      .line:nth-child(5) {
+        animation-delay: 0.4s;
+      }
+      @keyframes strechLine {
+        0 {
+          transform: scaleY(1);
+        }
+        20% {
+          transform: scaleY(1.8);
+        }
+        40% {
+          transform: scaleY(1);
+        }
+        100% {
+          transform: scaleY(1);
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="circle">
+      <div class="dot"></div>
+      <div class="dot"></div>
+      <div class="dot"></div>
+    </div>
+    <div id="strech">
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+    </div>
+  </body>
+</html>
