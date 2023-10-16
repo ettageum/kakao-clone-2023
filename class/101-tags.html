@@ -3,25 +3,71 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      content="Watch Netflix movies & TV shows online or..."
+      name="description"
+    />
+    <meta property="og:title" content="Nomad Coders" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://nomadcodeers.co/" />
+    <meta property="og:image" content="" />
+    <meta property="og:description" content="코딩은 진짜를 만들어보는거야!" />
+    <link
+      rel="shortcut icon"
+      sizes="16x16 32x32 64x64"
+      href="../images/WhaleScreenCapture-20230331-164258.jpg"
+    />
+    <link rel="stylesheet" href="style.css" />
     <title>Start-up!</title>
+    <style>
+      body {
+        height: 200vh;
+      }
+    </style>
   </head>
   <body>
-    <p>Hello! This is my first HTML file!<br />Nice to meet you!</p>
-    <ul>
-      <li>beer</li>
-      <li>kimchi</li>
-    </ul>
-    <ol>
-      <li>meat</li>
-      <li>milk</li>
-    </ol>
-    <a href="https://google.com" target="_blank">go to google.com</a>
-    <div>
-      <img
-        src="../images/andrey-zvyagintsev-x0c6vTO5ibA-unsplash.jpg"
-        alt="beauty"
-        width="400px"
-      />
-    </div>
+    <header>
+      <h1>Hello! This is my first HTML file!<br />Nice to meet you!</h1>
+    </header>
+    <main>
+      <ul>
+        <li>beer</li>
+        <li>kimchi</li>
+      </ul>
+      <ol>
+        <li>meat</li>
+        <li>milk</li>
+      </ol>
+      <a href="https://google.com" target="_blank">go to google.com</a>
+      <span>hello</span>
+      <div>
+        <img
+          src="../images/andrey-zvyagintsev-x0c6vTO5ibA-unsplash.jpg"
+          alt="beauty"
+          width="600px"
+        />
+      </div>
+      <pre>holla amigo</pre>
+      <audio
+        src="https://interactive-examples.mdn.mozilla.net/media/cc0-audio/t-rex-roar.mp3"
+        controls="enabled"
+      ></audio>
+      <form action="" method="get">
+        <label for="name">Name</label>
+        <input id="name" required type="text" placeholder="Name" />
+        <label for="website">Website</label>
+        <input id="website" required type="url" placeholder="Website" />
+        <input required type="text" placeholder="" disabled />
+        <input required type="password" placeholder="Password" minlength="8" />
+        <label for="photo">Profile Photo</label>
+        <input type="file" accept="image/*, .pdf" id="photo" />
+        <input type="color" name="" id="color" />
+        <input type="submit" value="Create Account" />
+      </form>
+    </main>
+    <footer>
+      &copy; 2023 A.T
+      <address>New york city</address>
+    </footer>
   </body>
 </html>
