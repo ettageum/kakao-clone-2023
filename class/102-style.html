@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CSS Discover</title>
     <style>
+      * {
+        border: 1px solid gray;
+      }
       html {
         background-color: darkgray;
       }
@@ -14,6 +17,7 @@
         /* height: 200vh; */
       }
       h1 {
+        margin-top: 0;
         color: yellowgreen;
         font-size: 40px;
         font-style: italic;
@@ -24,7 +28,22 @@
         width: 200px;
         height: 200px;
         background-color: aqua;
-        /* display: inline; */
+        display: inline;
+      }
+      .border {
+        width: 150px;
+        height: 150px;
+        padding: 20px;
+        border: 2px solid black;
+      }
+      #first {
+        background-color: aqua;
+      }
+      #second {
+        background-color: teal;
+      }
+      #third {
+        background-color: blueviolet;
       }
     </style>
   </head>
@@ -34,6 +53,17 @@
     </header>
     <main>
       <div class="block-inline">abc</div>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim
+        repudiandae provident dicta tempora! Quo aspernatur quisquam debitis,
+        neque sed modi dolores rerum sapiente iusto harum id adipisci earum, a
+        dignissimos?
+      </p>
+      <div class="border" id="first">
+        <div class="border border__btn" id="second">
+          <div class="border" id="third"></div>
+        </div>
+      </div>
     </main>
     <footer>
       <address>Bucheon Korea</address>
