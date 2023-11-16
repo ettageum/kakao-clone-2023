@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexbox</title>
+    <!-- !You do not talk to the children, talk to the parents -->
+    <style>
+        * {
+            background-color: antiquewhite;
+        }
+        body {
+            margin: 20px;
+        }
+        main {
+            height: 100vh;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-direction: column-reverse;
+        }
+        div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 150px;
+            height: 150px;
+            background-color: tomato;
+            font-size: 20px;
+        }
+        .second-one {
+            background-color: palegreen;
+        }
+    </style>
+</head>
+<body>
+    <header></header>
+    <main>
+        <div>1</div>
+        <div class="second-one">2</div>
+        <div>3</div>
+    </main>
+    <footer></footer>
+</body>
+</html>
