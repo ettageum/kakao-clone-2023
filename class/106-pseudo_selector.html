@@ -9,14 +9,44 @@
             background-color: azure;
         }
         div {
-            width: 200px;
-            height: 200px;
+            width: 100px;
+            height: 100px;
             background-color: tomato;
+        }
+        div:first-child {
+            background-color: aqua;
+        }
+        div:last-child {
+            background-color: teal;
+        }
+        /* ?'Live Server'의 오묘한 작용으로 인해 'last-child'가 동작하지 않음. */
+        span {
+            background-color: tomato;
+        }
+        span:nth-child(even) {
+            background-color: bisque;
+        }
+        span:nth-child(odd) {
+            background-color: rgb(185, 146, 97);
+        }
+        span:nth-child(3n) {
+            background-color: bisque;
         }
     </style>
 </head>
 <body>
     <div></div>
     <div></div>
+    <div></div>
+    <div></div>
+    <span>hello</span>
+    <span>hello</span>
+    <span>hello</span>
+    <span>hello</span>
+    <span>hello</span>
+    <span>hello</span>
+    <span>hello</span>
+    <span>hello</span>
+    <span>hello</span>
 </body>
 </html>
