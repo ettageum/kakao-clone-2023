@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combinator</title>
+    <style>
+        * {
+            background-color: azure;
+        }
+        body {
+            height: 200vh;
+        }
+        
+        span {
+            color: tomato;
+            background-color: yellowgreen;
+            padding: 5px 10px;
+            border-radius: 10px;
+        }
+        /* I. span inside of p; p 안에 있는 span 선택. */
+        p span {
+            color: teal;
+        }
+        div p span {
+            color: white;
+        }
+        /* II. select only divs' direct children span; div의 바로 밑 자식인 span만을 선택. */
+        div > span {
+            text-decoration: underline;
+        }
+        /* III. select span that is next of p; p의 형제관계에서 다음에 오는 span을 선택. */
+        p + span {
+            background-color: aqua;
+        }
+        /* IV. select span that is brother of p; p의 형제관계에서 span을 선택. */
+        p ~ span {
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem recusandae ea repellat ipsa tempora nostrum, ullam sunt ducimus reiciendis commodi, esse officiis vitae quibusdam voluptatibus blanditiis optio facere, enim saepe.<span>Hello</span></p>
+        <address>Republic of Korea</address>
+        <span>Hello</span>
+    </div>
+</body>
+</html>
