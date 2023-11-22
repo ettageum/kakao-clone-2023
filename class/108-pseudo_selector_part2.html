@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pseudo selector part 2</title>
+    <style>
+        * {
+            background-color: azure;
+        }
+        input {
+            border: 2px solid;
+        }
+        /* 특정 조건을 가진 요소만을 선택. */
+        input:optional {
+            border-color: wheat;
+        }
+        input:required {
+            border-color: tomato;
+        }
+        /* attribute selector; attribute를 통해 어떤 것이든 선택 가능. */
+        input[type="password"] {
+            background-color: thistle;
+        }
+        /* ~를 통해 placeholder중에서 name을 포함한 tags를 선발. */
+        input[placeholder~="name"] {
+            background-color: rgb(202, 248, 132)
+        }
+    </style>
+</head>
+<body>
+    <!-- todo [pseudo element mdn] search -->
+    <form action="">
+        <input type="text" name="" id="" placeholder="user name">
+        <input type="text" name="" id="" placeholder="last name">
+        <input type="password" name="" id="" required placeholder="password">
+    </form>
+</body>
+</html>

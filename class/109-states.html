@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>States</title>
+    <style>
+        * {
+            background-color: azure;
+        }
+        .active:active {
+            background-color: tomato;
+        }
+        .hover:hover {
+            background-color: aquamarine;
+        }
+        button:focus {
+            background-color: bisque;
+        }
+        a:visited {
+            color: tomato;
+        }
+        form {
+            border: 2px solid salmon;
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+        }
+        /* focus-within은 focus된 children이 있는 parent에게 적용. */
+        form:focus-within {
+            border-color: teal;
+        }
+        /* 두 선택자를 결합해서 사용할 때. */
+        form:hover input {
+            background-color: rgb(211, 100, 100, 0.2)
+        }
+        form:hover input:focus {
+            background-color: rgb(211, 100, 100, 0.4)
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <button class="active">Hello</button>
+        <button class="hover">Hello</button>
+        <button>Hello</button>
+        <a href="https://apple.com">Go to apple</a>
+    </div>
+    <br>
+    <div>
+        <form action="">
+            <input type="text" name="" id="">
+            <input type="text" name="" id="">
+            <input type="text" name="" id="">
+        </form>
+    </div>
+</body>
+</html>
