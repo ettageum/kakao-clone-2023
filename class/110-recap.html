@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>recap</title>
+    <style>
+        * {
+            background-color: azure;
+        }
+        body {
+            height: 200vh;
+            margin: 50px;
+        }
+        /* Below, useful 3 [pseudo element] explane. */
+        /* input이 아닌 placeholder를 꾸며준다. */
+        input::placeholder {
+            color: yellowgreen;
+        }
+        /* :focus와 비슷한 효과. 영역을 선택했을 떄의 효과를 변경한다. */
+        p::selection { 
+            background-color: hsl(80, 61%, 50%, 0.3);
+        }
+        p::first-letter {
+            font-size: 25px;
+            background-color: hsl(80, 61%, 50%);
+            color: white;
+        }
+        p::first-line {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <input type="text" placeholder="name">
+    </form>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus cumque, iure voluptas fuga pariatur minima minus ea! Quos libero corrupti praesentium accusantium, harum modi iste nisi voluptatem voluptatum? Expedita, culpa!</p>
+</body>
+</html>
