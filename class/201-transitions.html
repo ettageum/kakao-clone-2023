@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Transitions</title>
+    <!-- ! [transition] is a change from one 'state' to the other 'state'. -->
     <style>
         * {
             background-color: azure;
@@ -12,9 +13,28 @@
             height: 150vh;
             margin: 50px;
         }
+        /* transition은 state가 적용되지 않은 항목에 작성해야 한다.
+            transition은 변화에 대응하는 state가 있어야 한다. */
+        a {
+            color: white;  
+            background-color: tomato;
+            text-decoration: none;
+            padding: 3px 5px;
+            border-radius: 5px;
+            font-size: 30px;
+            transition: background-color 5s ease-in-out, color 5s ease-in-out;
+            transition: all 3s ease-in-out;
+        }
+        a:hover {
+            color: tomato;
+            background-color: wheat;
+            padding: 6px 8px;
+            border-radius: 100%;
+
+        }
     </style>
 </head>
 <body>
-    
+    <a href="#">Go home</a>
 </body>
 </html>
